@@ -4,7 +4,7 @@ resource "random_password" "password" {
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 
-variable "password" {
+variable "password-var" {
   type = string
   default = random_password.password.result
 }
