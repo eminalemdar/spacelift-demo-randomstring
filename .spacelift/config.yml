@@ -3,7 +3,7 @@ version: "2"
 stack_defaults:
     before_init:
         - echo "checking formatting"
-        - terraform fmt -check -recursive
+        - terraform fmt -check
 stacks:
     # The key of is the immutable slug of your stack
     # which you will find in the URL.
