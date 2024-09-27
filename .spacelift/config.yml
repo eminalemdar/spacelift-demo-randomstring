@@ -1,0 +1,11 @@
+version: "2"
+
+stack_defaults:
+    before_init:
+        - echo "checking formatting"
+        - terraform fmt -check -recursive
+stacks:
+    # The key of is the immutable slug of your stack
+    # which you will find in the URL.
+    random-password: 
+        runner_image: public.ecr.aws/spacelift/runner-terraform:v1.7.0_20240708
