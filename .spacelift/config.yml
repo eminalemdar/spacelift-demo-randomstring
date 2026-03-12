@@ -1,5 +1,0 @@
-version: "2"
-
-stack_defaults:
-    before_init:
-        - echo "testing the runner image"
